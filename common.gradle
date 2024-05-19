@@ -43,6 +43,7 @@ android {
                 appName : "Aniyomi: $extName",
                 extClass: extClass,
                 nsfw    : project.ext.find("isNsfw") ? 1 : 0,
+                torrent : project.ext.find("isTorrent") ? 1 : 0,
         ]
         String baseUrl = project.ext.find("baseUrl") ?: ""
         if (theme != null && !baseUrl.isEmpty()) {
